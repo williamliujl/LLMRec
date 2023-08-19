@@ -3,8 +3,8 @@
 exp_tag="llama"
 python finetune_rec.py \
     --base_model 'decapoda-research/llama-7b-hf' \
-    --data_path 'data/beauty_sequential_single_prompt_train_sample.json' \
-    --valid_data_path 'data/beauty_sequential_single_prompt_test.json' \
+    --data_path 'data/beauty_sequential_single_prompt_train.json' \
+    --valid_data_path 'data/beauty_sequential_single_prompt_valid.json' \
     --output_dir './lora-LLMRec-'$exp_tag \
     --prompt_template_name 'rec_template' \
     --micro_batch_size 2 \
@@ -16,8 +16,8 @@ python finetune_rec.py \
 exp_tag="alpaca"
 python finetune_rec.py \
     --base_model 'decapoda-research/llama-7b-hf' \
-    --data_path 'data/beauty_sequential_single_prompt_train_sample.json' \
-    --valid_data_path 'data/beauty_sequential_single_prompt_test.json' \
+    --data_path 'data/beauty_sequential_single_prompt_train.json' \
+    --valid_data_path 'data/beauty_sequential_single_prompt_valid.json' \
     --output_dir './lora-LLMRec-'$exp_tag \
     --prompt_template_name 'rec_template' \
     --micro_batch_size 2 \
